@@ -1,0 +1,200 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow:hidden;
+    /*margin: 0;*/
+
+    /*background*/
+    background-image: url('https://i.imgur.com/6QFmJG9.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100vw;
+    background-position: center top;
+    /*filter:brightness(50%); you can
+     create a dim slider by placing this
+      filter here in the html/body tag*/
+}
+div {
+    height: 100%;
+    /* background-color: #eaeaea; */
+    float: left;
+    }
+
+#left {
+    width:32.6%;
+    margin: 5px;
+    height: 65%;
+
+    padding: 20px;
+    box-sizing: border-box;
+
+    transform: translate(5em,2em);
+    filter:brightness(95%);
+}
+#center {
+    margin: 5px 0;
+    width: 32.15%;
+    height: 65%;
+
+    box-sizing: border-box;
+    filter:brightness(100%);
+
+}
+#right {
+    margin: 5px;
+    width: 33%;
+    height: 65%; /*normal is 75%*/
+
+    padding: 20px; /*was 10px before*/
+    box-sizing: border-box;
+
+    transform: translate(-5em,2em);
+    filter:brightness(95%);
+}
+
+#footer
+{
+  /* margin: 5px; */
+  margin-top:0px;
+  width: 100%;
+  height: 33.5%;
+
+  padding: 10px;
+  box-sizing: border-box;
+  background-image: url('https://i.imgur.com/cIYRviC.png?1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100vw;
+  background-position: center bottom;
+  /* background-image: url();
+  background-size: cover;
+  background-repeat: no-repeat, repeat; */
+}
+
+.container
+{
+  border-top: 1px solid #f5f5f5;
+  margin-top: 3em;
+  width: 70%;
+  height: 90%;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 10px 10px 0px   rgba(10, 10, 10,0.25);
+
+  /*centering*/
+  transform: translate(20%,-0%);
+}
+
+.controll
+{
+  width: 30%;
+  /*when center out, change this to 100%*/
+  height: 20%;
+  /*temporary color identifier*/
+  background-color: #ffffff;
+  /* border: 1px solid red; */
+  /*centering*/
+  position:absolute;
+  left:50%;
+  transform: translate(-53%,30%);
+
+  /*actual styling*/
+  border-radius: 10px;
+  box-shadow:inset 0px 0px 90px 30px rgba(247, 247, 247, 0.4),0 0 10px 0px rgba(10, 10, 10,0.25);
+  /* box-shadow: 0 0 10px 0px rgba(10, 10, 10,0.25); */
+}
+
+img{
+  /* width: 100%; /*or 70%, or what you want
+  height: 80%; /*or 70%, or what you want
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+
+ position: relative;
+ width: 250px;
+ height: 350px;
+ top: calc(50% - 175px);
+ left: calc(50% - 125px);
+ background: inherit;
+ border-radius: 2px;
+ overflow: hidden;
+}
+
+#theOne
+{
+  height: 95%;
+  width: 95%;
+  transform: translate(-6.5%,-4.7%);
+}
+
+.currentPicTitle
+  {
+    position: absolute;
+    left: 28%;
+    box-sizing: border-box;
+    height: auto;
+  }
+
+.currentPicVotes
+  {
+
+  }
+.divider
+  {
+    /*centering*/
+    transform: translate(6%,00%);
+
+    background-color: #d5d5d5;
+    width: 90%;
+    height: 2%;
+    border: none;
+    margin-top: 17%;
+  }
+.controllPanel
+  {
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 3%;
+    height: auto;
+  }
+button
+  {
+      border: 0;
+      background: none;
+      font-size: 2.5vw;
+      color: #252525;
+      margin-left: 0.7vw;
+      margin-right: 0.7vw;
+      transition: .2s ease-in-out;
+  }
+button:hover
+  {
+    color: #636363;
+  }
+button:active
+  {
+    color: #bebebe;
+  }
+button:focus
+  {
+    outline: none
+  }
+
+  #previous{margin-right: 2vw; margin-left: 13%;}
+  #next{margin-left: 2vw;}
+  #fullScreen{}
+  #vote{}
+  #info{}
+
+  h4{
+    line-height: 0.0;
+  }
+
+a{
+  margin-left: 1.2em;
+}
+a::before
+{
+  content: "Por: ";
+}
